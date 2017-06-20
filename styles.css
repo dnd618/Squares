@@ -2,7 +2,7 @@ body {
   padding: 20px;
 }
 button {
-    margin-top: 20px;
+    margin-top: 5px;
     line-height: 60px;
     font-weight: bold;
     padding: 0 40px;
@@ -11,8 +11,4 @@ button {
     width: 2em;
     height: 2.5em;
 }
-div {
-    width: 10em;
-    height: 10em;
-    background: "black";
-}
+
