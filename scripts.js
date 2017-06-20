@@ -1,6 +1,8 @@
-function myFunction() {
-    var x = document.createElement("BUTTON");
-    var t = document.createTextNode("Click me");
-    x.appendChild(t);
-    document.body.appendChild(x);
-}
+function button_click(color) {
+     document.getElementById("box").style.backgroundColor = color;
+     document.getElementById("box1").style.backgroundColor = color;
+};
+('body').on('click', '.change-color', function(){
+    var color = $(this).data('color');
+    $('.global-class-'+color).css('background-color', color);
+});
