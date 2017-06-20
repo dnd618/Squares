@@ -25,3 +25,4 @@ function changeDivColor() {
     var color = getRandomColor();
     div.style.backgroundColor = color;
 };
+
