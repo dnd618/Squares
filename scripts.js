@@ -11,6 +11,8 @@ var div = document.createElement("div");
     div.style.color = "white";
     div.innerHTML = "";
     div.style.padding = "2em;"
+    counter++;
+    div.id = counter;
     document.body.appendChild(div);
 //Naming DIV classes
 var d = document.getElementById("div");
@@ -18,8 +20,12 @@ div.className += "someDivs";
 div.addEventListener('click', function(){
     div.style.backgroundColor = getRandomColor();
     });
-});
 
+// //# on DIV with mouseover
+    div.addEventListener('mouseover', function(){
+        div.innerText = div.id;
+});
+});
 //Function for div random colors
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -29,13 +35,3 @@ function getRandomColor() {
     }
     return color;
 };
-
-// //# on DIV with mouseover
-//     div.addEventListener('mouseover', function(){
-//         div.innerHTML = "";
-//     });
-//     div.id = counter;
-//     counter++;
-// });
-
-
