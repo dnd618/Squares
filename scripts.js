@@ -9,6 +9,7 @@ var div = document.createElement("div");
     div.style.height = "10em";
     div.style.background = "black";
     div.style.color = "white";
+    div.style.textAlign = "center";
     div.innerHTML = "";
     div.style.padding = "2em;"
     counter++;
@@ -20,10 +21,11 @@ div.className += "someDivs";
 div.addEventListener('click', function(){
     div.style.backgroundColor = getRandomColor();
     });
-
-// //# on DIV with mouseover
+// //# DIV mouseover function
     div.addEventListener('mouseover', function(){
         div.innerText = div.id;
+    div.addEventListener('mouseleave', function(){
+        div.innerText = "";
 });
 });
 //Function for div random colors
@@ -35,3 +37,4 @@ function getRandomColor() {
     }
     return color;
 };
+//Make odd & even DIVs disappear
