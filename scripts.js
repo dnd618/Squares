@@ -21,11 +21,13 @@ div.className += "someDivs";
 div.addEventListener('click', function(){
     div.style.backgroundColor = getRandomColor();
     });
-// //# DIV mouseover function
+
+// //# on DIV with mouseover
     div.addEventListener('mouseover', function(){
         div.innerText = div.id;
     div.addEventListener('mouseleave', function(){
-        div.innerText = "";
+        div.innerText = ""
+    });
 });
 });
 //Function for div random colors
@@ -38,3 +40,5 @@ function getRandomColor() {
     return color;
 };
 //Make odd & even DIVs disappear
+
+
