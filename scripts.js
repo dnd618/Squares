@@ -40,8 +40,11 @@ function getRandomColor() {
     return color;
 };
 //Make odd & even DIVs disappear
-
-//Alert hint
+//
+div.nextElementSibling
+previousElementSibling
+.remove ();
+//Alert hints//
 if (box is even & it's not the last element then remove next element)
 else if (the previous element is not the button then remove previous element)
 else [ the previous button is not a button, then alert]
