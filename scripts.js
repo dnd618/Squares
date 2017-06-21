@@ -1,6 +1,7 @@
 //Button
 var button = document.createElement("button");
     button.innerHTML = "";
+    var counter = 0;
     document.body.appendChild(button);
         button.addEventListener ("click", function() {
 var div = document.createElement("div");
@@ -18,6 +19,7 @@ div.addEventListener('click', function(){
     div.style.backgroundColor = getRandomColor();
     });
 });
+
 //Function for div random colors
 function getRandomColor() {
     var letters = '0123456789ABCDEF';
@@ -26,4 +28,14 @@ function getRandomColor() {
         color += letters[Math.floor(Math.random() * 16)];
     }
     return color;
-}
+};
+
+// //# on DIV with mouseover
+//     div.addEventListener('mouseover', function(){
+//         div.innerHTML = "";
+//     });
+//     div.id = counter;
+//     counter++;
+// });
+
+
